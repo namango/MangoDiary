@@ -1,0 +1,38 @@
+* {
+  font-family: "Lobster", cursive;
+}
+
+.index_page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-image: url("./angry_mango.png");
+  background-size: 30%; */
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  font-size: xx-large;
+}
+
+.background > p {
+  margin: 10px 0px 20px 0px;
+  background-color: balck;
+}
+
+.background > a,
+img {
+  filter: drop-shadow(12px 12px 2px rgba(250, 82, 227, 0.486));
+  width: 12em;
+}
+
+span {
+  position: absolute;
+  font-size: 15em;
+  z-index: -1;
+}
