@@ -32,7 +32,11 @@ img {
 }
 
 span {
+  left: -100px;
+  top: -300px;
+  width: 100%;
   position: absolute;
-  font-size: 15em;
-  z-index: -1;
+  font-size: 13em;
+  transform: rotate(-15deg);
+  z-index: -2;
 }
