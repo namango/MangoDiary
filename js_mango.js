@@ -3,14 +3,16 @@ window.addEventListener('DOMContentLoaded', () => {
     var span = document.createElement('span')
 
     body.appendChild(span)
-    span.textContent = '♥'
-
-
-
+    span.textContent = '♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥♥'
+    y_pos = 0;
+    x_pos = 0;
     function moving_heart() {
-        span.style.left = Math.round(Math.random()*window.innerWidth) + 'px';
-        span.style.top = Math.round(Math.random()*window.innerHeight) + 'px';
+        y_pos += 20;
+        span.style.top = y_pos + 'px';
+        if (parseInt(span.style.top) >= window.innerHeight ){
+            y_pos = 0;
+            console.log(y_pos)
+        }
     }
-
-    moving_heart()
+    setInterval(moving_heart, 100)
 })
